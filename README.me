@@ -1,0 +1,38 @@
+
+Problem Statement :
+
+This case requires trainees to develop a model for predicting fraudulent transactions for a financial company and use insights from the model to develop an actionable plan. Data for the case is available in CSV format having 6362620 rows and 10 columns. 
+Candidates can use whatever method they wish to develop their machine learning model. Following usual model development procedures, the model would be estimated on the calibration data and tested on the validation data. This case requires both statistical analysis and creativity/judgment. We recommend you spend time on both fine-tuning and interpreting the results of your machine learning model. 
+
+Data Dictionary & Source Acquisition 
+• Data Dictionary: The data dictionary of the dataset can be found here - https://drive.google.com/uc?id=1VQ-HAm0oHbv0GmDKP2iqqFNc5aI91OLn&export=download. 
+• Data Source: The dataset can be found here - https://drive.google.com/uc?export=download&confirm=6gh6&id=1VNpyNkGxHdskfdTNRSjjyNa5qC9u0JyV 
+
+
+
+									Code Overview
+
+
+
+
+•	Dataset Overview:
+The dataset provided for fraud detection exhibits a significant class imbalance, with a small number of fraudulent transactions compared to non-fraudulent ones.
+Missing values in the dataset were handled, and the numerical features were scaled using StandardScaler. Categorical variables were encoded using label encoding.
+•	Data Visualization:
+The distribution of fraudulent transactions was visualized, highlighting the minimal occurrence of fraud compared to non-fraud cases.
+A bar graph was generated to compare the different transaction types for fraud and non-fraud cases, revealing that cash-out transactions were the most common type associated with fraud.
+•	Logistic Regression Model:
+The logistic regression model was trained and evaluated for fraud detection.
+The model achieved an accuracy of 90.41%, precision of 91.36%, recall of 89.19%, and F1 score of 90.26%.
+Cross-validation demonstrated a mean accuracy of approximately 89.89% with a standard deviation of 0.0258, indicating consistent performance.
+•	Decision Tree Model:
+The decision tree model was trained and evaluated for fraud detection.
+The model achieved an accuracy of 99.17%, precision of 98.66%, recall of 99.69%, and F1 score of 99.18%.
+Cross-validation showed good accuracy for the decision tree model.
+•	Correlation Analysis:
+A correlation analysis revealed a strong positive correlation between the "Amount" feature and the target variable, indicating its importance in predicting fraud.
+•	Conclusion:
+The code provides a comprehensive analysis of fraud detection using logistic regression and decision tree models.
+The decision tree model achieved higher performance metrics, but both models showed promising results in identifying fraudulent transactions.
+The insights gained from this code can serve as a foundation for further improvements and fine-tuning to enhance the overall effectiveness of fraud detection systems.
+Overall, the code presents an in-depth analysis of fraud detection, highlighting the performance of logistic regression and decision tree models. The correlation analysis and fraud prevention measures further contribute to understanding and mitigating fraud risks.
